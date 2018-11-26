@@ -5,6 +5,17 @@
 * Category: Classic Control
  * [Environment Page](https://gym.openai.com/envs/CartPole-v0)  
 
+### Training
+Clone the repository:
+```
+git clone https://github.com/GopiKishan14/Self_Balancing_Bot.git
+```
+Navigate to Cart-Pole directory and run the script:
+```
+cd Self_Balancind_Bot/Cart-Pole
+python dqn_cartpole.py
+```
+
 ### Description
 A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The pendulum starts upright, and the goal is to prevent it from falling over by increasing and reducing the cart's velocity.
 
