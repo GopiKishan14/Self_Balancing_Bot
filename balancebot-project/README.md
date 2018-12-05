@@ -8,7 +8,15 @@ To install this environment:
     cd Self_Balancind_Bot/balancebot-project
     pip install -e .
     
+If you find problem in installation , manually install :-
+
+```
+pip install gym
+pip install pybullet
+```
+
 To train the agent:
+
 ```
     cd Self_Balancind_Bot/balancebot-project
     python main.py
