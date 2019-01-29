@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/45068568/is-it-possible-to-create-a-new-gym-environment-in-openai
+https://github.com/openai/gym/tree/master/gym/envs#how-to-create-new-environments-for-gym
+
+
+https://backyardrobotics.eu/2017/11/29/build-a-balancing-bot-with-openai-gym-pt-ii-the-robot-and-environment/
+imu sensor
+
+http://wiki.ros.org/urdf/Tutorials/Building%20a%20Visual%20Robot%20Model%20with%20URDF%20from%20Scratch
