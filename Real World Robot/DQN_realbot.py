@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import balance_bot
 import random
 #env=gym.make('balancebot_v0')
-#2lac-5.6
+
 from env_robo import env_robo_class
 import tensorflow.contrib.slim as slim
 env=env_robo_class()
@@ -96,8 +96,8 @@ with tf.Session() as sess:
         s = env.reset()#call your function""
 #        s=np.array([0.,0.,0.]) do a motor action to give a velocity and stand again to middle then get the actual position
 """ """
-        print (i)
-        rAll = 0
+    print (i)
+    rAll = 0
         d = False
         j = 0
         while j < 1500:
@@ -111,7 +111,7 @@ with tf.Session() as sess:
             
             #Get new state and reward from environment
             s1,r,d,_ = env.step(a)
-
+            
             mem.add(np.reshape(np.array([s,a,r,s1,d]),[1,5]))
             
             if e > endE and total_steps > pre_train_steps:
@@ -129,12 +129,12 @@ with tf.Session() as sess:
                 targetQ = trainBatch[:,2] + (gamma*doubleQ * end_multiplier)
                 
                 for (i,j)in zip(range(batch_size),trainBatch[:,1]):
-                        Q3[i,j]=targetQ[i]
-#                Q3[range(batch_size),np.array(trainBatch[:,1])]=targetQ
-
+                    Q3[i,j]=targetQ[i]
+                #                Q3[range(batch_size),np.array(trainBatch[:,1])]=targetQ
+                
                 _ = sess.run(q_net.updateModel,feed_dict={q_net.inputs:np.vstack(trainBatch[:,0]),q_net.nextQ:Q3})
-        
-        
+            
+            
             s=s1
             rAll += r
             
@@ -143,13 +143,13 @@ with tf.Session() as sess:
                 break
             jList.append(j)
             rList.append(rAll)
-        if i % 50 == 0 and i != 0:
-                r_mean = np.mean(rList[-100:])
-            
-            
-                print("Mean Reward: " + str(r_mean) + " Total Steps: " + str(total_steps) + " t: " + str(e)+"episode:"+str(i))
-            
+    if i % 50 == 0 and i != 0:
+        r_mean = np.mean(rList[-100:])
+        
+        
+            print("Mean Reward: " + str(r_mean) + " Total Steps: " + str(total_steps) + " t: " + str(e)+"episode:"+str(i))
+        
         if i%10==0:
             
-                save_path = saver.save(sess, "hello")
+            save_path = saver.save(sess, "hello")
 

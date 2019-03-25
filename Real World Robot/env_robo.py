@@ -28,19 +28,12 @@ class env_robo_class:
         # could also be pi/2 - abs(cubeEuler[0])
         return (1 - self.pitch) * 0.1 -  abs(self.speed - self.vd) * 0.01
     def _compute_done(self):
-        #please find optimal pitch
+        # Adjust according to optimal pitch
         return self.pitch> .9 or self._envStepCounter >= 1500
     def reset(self):
         self.vt = 0
         self.speed = 0
         self._envStepCounter = 0
         self.pitch , self.Gx = 0,0
-
-
-
-
-
-
-
 
 
