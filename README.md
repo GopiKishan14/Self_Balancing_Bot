@@ -1,5 +1,10 @@
-# Self_Learning_Bot
-A project in ArIES based on Reinforcement Learning.
+# Self Balancing Bot
+```
+This project aimes at stabalising a two wheeled robot (naturally in unequilibrium)
+using Reinforcement Learning.
+It is completed under the guidance and mentorship of Artificial Intelligence 
+and Electronic Society(ArIES) of IIT Roorkee.
+```
 
 ## Description
 
