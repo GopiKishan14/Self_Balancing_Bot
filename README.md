@@ -42,7 +42,12 @@ This project's duration was around 4 months.
 In the begining, I had no knowledge of reinforcement learning. So go through theoretical part and 
 learning the mathematics behind, was quite satisfactory. 
 
-
+Key Take Aways:
+* Hands on experience and fair insight in Reinforcement Learning (particularly Q learning). 
+* Explored OpenAI for modeling Agents in its different envs. 
+* Experience with pyBullet (a physics simulation pakage) ans ROS URDF (for creating virtual agents). 
+* Experience with managing hardwares and deploying models. 
+ 
 ## Learning Resources
 
 
