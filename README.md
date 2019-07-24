@@ -49,9 +49,11 @@ Key Take Aways:
 * Experience with managing hardwares and deploying models. 
  
 ## Learning Resources
+* Reinforcement Learning : An Introduction, book by Richard S. Sutton and Andrew G. Barto
+* RL course by David Silver, Professor of Computer Science. University College London.
 
-
-## Feedback
+Other resources will be updates soon. 
+# Feedback
 
 All kinds of feedback (code style, bugs, comments etc.) is welcome. Please open an [*Issue*](https://github.com/GopiKishan14/Self_Balancing_Bot/issues) on this Repository.
 
