@@ -30,12 +30,21 @@ It has two chips: <br/>
 Raspberry pi3 B+ model is used as motherboard with rasbian as operating system. All codes are written in python3
 
 ## Installation and Set Up
+```
+For running and testing the software simulation, go through the readme of balancebot-project.
+```
 
 ## Testing
+ The real world testing guide will be updated soon.
 
 ## Learning Experience (Take Aways)
+This project's duration was around 4 months.
+In the begining, I had no knowledge of reinforcement learning. So go through theoretical part and 
+learning the mathematics behind, was quite satisfactory. 
+
 
 ## Learning Resources
+
 
 ## Feedback
 
